@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { routerPaths } from "../router/routes"
 
 defineProps<{ msg: string }>()
 
@@ -8,7 +9,7 @@ const count = ref(0)
 
 <template>
   <h1>{{ msg }}</h1>
-
+  <router-link :to="routerPaths.about">about</router-link>
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VS Code</a>

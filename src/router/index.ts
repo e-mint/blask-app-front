@@ -8,9 +8,9 @@ import { routerPaths } from "./routes";
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: routerPaths.home,
-    name: "Home",
-    component: () => import("../components/HelloWorld.vue"),
+    path: routerPaths.base,
+    name: "Base",
+    component: () => import("../components/layout/AppBaseLayout.vue"),
   },
   {
     path: routerPaths.about,

@@ -1,4 +1,4 @@
 export enum routerPaths {
-  home = "/",
+  base = "/",
   about = "/about",
 }
